@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-77CZTTJVXL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-77CZTTJVXL');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Roadmap | LAPOWORLD</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo"><span class="logo-icon">⚙</span> LAPOWORLD</a>
+        <ul class="nav-links">
+            <li><a href="index.html#features">Services</a></li>
+            <li><a href="index.html#pricing">Plans</a></li>
+            <li><a href="index.html#testimonials">Reviews</a></li>
+            <li><a href="blog.html" style="color: var(--accent); text-shadow: var(--glow);">Blog & Roadmap</a></li>
+            <li><a href="privacy-policy.html">Privacy</a></li>
+        </ul>
+        <a href="https://wa.me/9073009970" class="nav-cta">Book Now</a>
+    </div>
+</nav>
+
+<section class="section-container" style="margin-top: 80px;">
+    <div class="section-header fade-in-up">
+        <h1 class="section-title">Diagnostic Roadmap</h1>
+        <p>A deep dive into common hardware failures and how our engineers solve them.</p>
+    </div>
+
+    <div class="tech-tree">
+        
+        <div class="tree-node fade-in-up">
+            <h3>Level 1: The Power Matrix (Dead Device)</h3>
+            <p><strong>Symptoms:</strong> No lights, no fan spin, completely unresponsive.</p>
+            <p><strong>Our Protocol:</strong> We map the power rails starting from the DC-in jack, checking for shorted capacitors, faulty mosfets, or a degraded battery unit. Fixes range from simple charger replacement to micro-soldering new power management ICs.</p>
+        </div>
+
+        <div class="tree-node fade-in-up">
+            <h3>Level 2: Visual Interface Failure</h3>
+            <p><strong>Symptoms:</strong> Device turns on, fans spin, but the screen remains black, flickering, or shows vertical lines.</p>
+            <p><strong>Our Protocol:</strong> We bypass the internal display to an external monitor to isolate GPU vs. Screen issues. If it's the screen, we replace the LCD/OLED panel or the LVDS flex cable. If it's the GPU, motherboard repair is initiated.</p>
+        </div>
+
+        <div class="tree-node fade-in-up">
+            <h3>Level 3: Storage & Logic Bottlenecks</h3>
+            <p><strong>Symptoms:</strong> Extremely slow boot times, frequent crashing, blue screen of death (BSOD).</p>
+            <p><strong>Our Protocol:</strong> We test the health of the HDD/SSD. Mechanical drives are cloned to high-speed NVMe SSDs. We also run memory (RAM) diagnostics to ensure data is passing to the CPU without corruption.</p>
+            <br>
+            <a href="https://wa.me/9073009970" class="btn-primary bounce-taunt" style="display: block; text-align: center;">Book a Diagnostic Protocol →</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="blog.html">Blog</a>
+    </div>
+    <p style="margin-top: 1rem; color: var(--text-secondary);">© 2026 LAPOWORLD Repair and Service</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
