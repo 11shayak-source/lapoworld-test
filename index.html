@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-77CZTTJVXL"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10780205591"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
+  // Your existing Google Analytics tag
   gtag('config', 'G-77CZTTJVXL');
+  // Your added Google Ads tag
+  gtag('config', 'AW-10780205591');
 </script>
 
 <meta charset="UTF-8">
@@ -23,6 +26,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+
+<style>
+  /* Custom CSS for floating call button */
+  .floating-call-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366; /* Vibrant green for high conversion */
+    color: #ffffff !important;
+    padding: 14px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .floating-call-btn:hover {
+    transform: translateY(-3px);
+    background-color: #1ebc59;
+  }
+</style>
 
 </head>
 
@@ -264,6 +293,10 @@
         </div>
     </div>
 </footer>
+
+<a href="tel:9073009970" class="floating-call-btn">
+  📞 Call (9073009970)
+</a>
 
 <script src="script.js"></script>
 
