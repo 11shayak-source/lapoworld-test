@@ -13,6 +13,21 @@
   gtag('config', 'AW-10780205591');
 </script>
 
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-10780205591/REPLACE_WITH_YOUR_LABEL',
+        'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -294,7 +309,7 @@
     </div>
 </footer>
 
-<a href="tel:9073009970" class="floating-call-btn">
+<a href="tel:9073009970" class="floating-call-btn" onclick="return gtag_report_conversion('tel:9073009970');">
   📞 Call (9073009970)
 </a>
 
