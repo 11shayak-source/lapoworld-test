@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Repair Protocol | Lapoworld Technical Repair</title>
+<meta name="description" content="Step inside the Lapoworld lab. Discover our rigorous 4-phase technical repair protocol, from microscopic logic board diagnostics to extreme thermal stress testing.">
+<meta name="keywords" content="Laptop repair process, computer diagnostics Kolkata, BGA rework, logic board testing, motherboard schematics, Lapoworld protocol, tech QA testing">
+<meta name="author" content="Sujan Saha - Lapoworld">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="images/your-logo-icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tooplate-2167-orbital-style.css">
+<style>
+  /* Three.js Infinite Engineering Grid Container */
+  #three-grid-canvas { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; opacity: 0.25; pointer-events: none; }
+</style>
+</head>
+
+<body class="visuals-on">
+
+<!-- Three.js WebGL Grid Background -->
+<canvas id="three-grid-canvas"></canvas>
+<div class="aura"></div>
+
+<nav class="nav">
+  <div class="logo">
+    <a href="index.html" class="logo">
+      <span class="logo-text">LAPO<br>WORLD</span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="ecosystem.html">Ecosystem</a></li>
+    <li><a href="process.html" style="color: var(--cyan);">Process</a></li>
+    <li><a href="gaming.html">Gaming</a></li>
+    <li><a href="https://api.whatsapp.com/send/?phone=9073009970&text&type=phone_number&app_absent=0" class="nav-cta" target="_blank">WhatsApp Us</a></li>
+  </ul>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="services.html">Services</a>
+  <a href="ecosystem.html">Ecosystem</a>
+  <a href="process.html" style="color: var(--cyan);">Process</a>
+  <a href="gaming.html">Gaming</a>
+  <a href="https://api.whatsapp.com/send/?phone=9073009970&text&type=phone_number&app_absent=0" style="color:#00ffcc;" target="_blank">WhatsApp Us</a>
+</div>
+
+<main class="article-container">
+  
+  <div class="gsap-fade-up" style="margin-top: 60px;">
+    <div class="eyebrow" style="text-align: left; margin-bottom: 15px;">// THE LAPOWORLD PROTOCOL</div>
+    <h1 class="gradient-text glitch-hover">Absolute Precision. Zero Guesswork.</h1>
+    <p class="lead" style="font-size: 1.3rem; color: var(--white); font-weight: 500;">Amateur repair shops rely on trial and error, swapping expensive parts blindly until the machine turns on. At Lapoworld, we operate on a strictly engineered protocol. Every device follows a calculated, scientific journey from the moment it hits our static-free diagnostic benches.</p>
+  </div>
+
+  <div class="gsap-fade-up">
+    <h2>Phase 1: Pre-Teardown Current Analysis</h2>
+    <p>Before a single screw is removed, the diagnostic process begins. When a "dead" laptop arrives, our first step is inline current monitoring. By injecting power through a digital ammeter via USB-C or DC-in, we analyze the exact current draw in milliamps (mA).</p>
+    <p>The ammeter tells a story: A static 5V / 0.00A draw instantly tells us the USB-C controller (like the CD3215 chip on a MacBook) is failing to negotiate a 20V handshake. A 20V / 0.02A draw indicates the main power rail is present, but the SMC or CPU is refusing to wake. A rapid spike to 20V / 2.50A followed by an immediate crash points to a direct short to ground on a secondary voltage rail. This non-invasive diagnostic maps out the logic board's health before the chassis is even opened.</p>
+  </div>
+
+  <div class="gsap-fade-up">
+    <h2>Phase 2: The ESD-Safe Teardown & Inspection</h2>
+    <p>Once the initial data is logged, the device is moved to our Electrostatic Discharge (ESD) safe mats. Technicians wearing grounded wrist straps perform the teardown. In modern ultrabooks and gaming rigs, chassis design is highly fragile, utilizing microscopic ZIF (Zero Insertion Force) connectors and delicate ribbon cables.</p>
+    <p>The motherboard is extracted and placed under an industrial digital microscope. We perform a visual sweep at 40x to 100x magnification. We aren't just looking for obvious burn marks; we are hunting for oxidized solder joints, microscopic liquid ingress (even a single drop of sweat from a year ago), and fractured ball joints under BGA components. We cross-reference the physical board with leaked manufacturer schematics and board-view software to identify the exact names of the failing components.</p>
+  </div>
+
+  <!-- Image 1 -->
+  <img src="images/process-1.jpg" alt="Technician reviewing digital schematics and board-view software" class="article-image gsap-fade-up" loading="lazy">
+
+  <div class="gsap-fade-up">
+    <h2>Phase 3: The Surgical Repair (Level 4)</h2>
+    <p>With the exact faulty component identified—perhaps a shorted filtering capacitor on the PPBUS_G3H rail—the surgery begins. The surrounding area of the logic board is masked with heat-resistant Kapton tape to protect adjacent plastic connectors from melting. </p>
+    <p>We apply high-grade, no-clean rosin flux to the target area. Using hot air rework stations calibrated precisely to the melting point of unleaded solder (around 217°C to 225°C), we isolate the heat. The faulty microchip is lifted with titanium tweezers. The pads on the motherboard are cleaned and tinned with fresh, high-quality leaded solder (which has a lower melting point and greater flexibility), and the donor chip is flowed perfectly into place. The area is then scrubbed with 99.9% isopropyl alcohol to remove all flux residue, leaving a factory-clean finish.</p>
+  </div>
+
+  <div class="gsap-fade-up">
+    <h2>Phase 4: The Quality Assurance Crucible</h2>
+    <p>A laptop booting up to the Windows or macOS logo is not the end of the Lapoworld protocol; it is merely the beginning of the QA phase. A repaired logic board must prove it can survive real-world strain.</p>
+    <p>We reassemble the device and subject it to a brutal testing crucible. We run memory tests (MemTest86) to ensure RAM stability. We run synthetic loads (FurMark for the GPU, Prime95 for the CPU) to max out thermal output, verifying that our liquid metal or thermal paste application is keeping the silicon well below throttling thresholds. We test every single port, the web camera, microphone array, Wi-Fi antenna throughput, and cycle the battery. Only when a device passes this 24-point inspection is it cleared for client handover.</p>
+  </div>
+
+  <!-- Image 2 -->
+  <img src="images/process-2.jpg" alt="Laptop undergoing extreme thermal stress testing software" class="article-image gsap-fade-up" loading="lazy">
+
+  <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 60px 0;">
+
+  <!-- Testimonials -->
+  <div class="gsap-fade-up">
+    <div class="eyebrow">// TRANSPARENCY & TRUST</div>
+    <h2 style="margin-top: 0;">Verified Client Experiences</h2>
+    <p>We believe in absolute transparency. Here is how our engineered protocol translates to peace of mind for our clients.</p>
+  </div>
+
+  <div class="testimonial-grid gsap-stagger-list">
+    <div class="testimonial-card">
+      <div class="quote">"I've never seen a repair shop operate like this. Sujan actually explained the current draw on the ammeter to me before even opening my laptop. They found a short in the 3V line, fixed it, and sent me a video of the stress test. Pure professionalism."</div>
+      <div class="client-name">Anirban Chatterjee</div>
+      <div class="client-meta">IT Consultant, Salt Lake</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="quote">"Other shops just held my laptop for weeks with no updates. Lapoworld has a strict process. They diagnosed the issue within 24 hours, gave me a micro-soldering quote, and had it stress-tested and returned in three days. Unbeatable."</div>
+      <div class="client-name">Neha Sharma</div>
+      <div class="client-meta">Freelance Illustrator, Dum Dum</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="quote">"I spilled coffee on my Razer Blade. I thought it was a paperweight. The Lapoworld team ran it through an ultrasonic cleaner, replaced two burnt chips, and stress-tested the GPU for 12 hours before giving it back. It runs cooler now than when I bought it."</div>
+      <div class="client-name">Rajiv Menon</div>
+      <div class="client-meta">Gamer, Kolkata</div>
+    </div>
+  </div>
+
+  <!-- FAQs -->
+  <div class="gsap-fade-up faq-section">
+    <div class="eyebrow">// KNOWLEDGE BASE</div>
+    <h2 style="margin-top: 0; margin-bottom: 30px;">Process & Protocol FAQs</h2>
+    
+    <div class="gsap-stagger-list">
+      <div class="faq-item">
+        <div class="faq-question">How long does the diagnostic phase take? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Initial triage (Phase 1 ammeter testing) takes less than 5 minutes and is often done right in front of you. Deep microscopic teardowns (Phase 2) for complex logic board shorts typically take 24 to 48 hours depending on lab volume.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Is my personal data safe during the repair process? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">100%. We operate on a strict data-blind protocol. Unless you are specifically paying for data recovery or OS installation, we do not require your passwords. We use our own external bootable USB drives (containing Linux, Windows PE, or macOS) to run our stress tests and verify hardware functionality without ever accessing your internal personal files.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Do you offer a warranty on chip-level repairs? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Yes. Because our Phase 4 Quality Assurance testing is so rigorous, we confidently offer a warranty on our board-level repairs. If the exact same circuit or chip fails within the warranty period, we rework it at absolutely zero cost to you.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">What is board-view software? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Board-view (.brd or .fz files) is proprietary CAD software that maps out every single microscopic trace, resistor, and pad on a motherboard. It allows our technicians to click on a broken circuit and instantly see exactly where the electrical signal is supposed to travel next, eliminating all guesswork.</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-grid" style="display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; max-width: 1200px; margin: 0 auto 40px auto; text-align: left; padding: 0 20px;">
+    
+    <div class="footer-brand" style="margin-bottom: 20px;">
+      <a href="index.html" class="logo" style="text-decoration: none; color: white;">
+        <span class="logo-text">LAPO<br>WORLD</span>
+      </a>
+      <p style="opacity: 0.7; max-width: 300px; margin-top: 15px; font-size: 0.9em;">Premium technical repair services and custom builds. Established 2017. Serving Kolkata, Dum Dum, and Howrah with transparency and speed.</p>
+    </div>
+
+    <div class="footer-links" style="margin-bottom: 20px;">
+      <h4 style="color: #00ffcc; letter-spacing: 1px; margin-bottom: 15px;">Service Areas</h4>
+      <ul style="list-style: none; padding: 0; opacity: 0.7; font-size: 0.9em; line-height: 1.8;">
+        <li>Dum Dum & North 24 Parganas</li>
+        <li>Howrah & Hooghly</li>
+        <li>Salt Lake City (Sectors I-V)</li>
+        <li>New Town & Rajarhat</li>
+      </ul>
+    </div>
+
+    <div class="footer-contact" style="margin-bottom: 20px;">
+      <h4 style="color: #00ffcc; letter-spacing: 1px; margin-bottom: 15px;">Contact Us</h4>
+      <ul style="list-style: none; padding: 0; opacity: 0.7; font-size: 0.9em; line-height: 1.8;">
+        <li>📱 +91 9073009970</li>
+        <li>✉️ support@lapoworld.com</li>
+        <li style="max-width: 250px; line-height: 1.4; margin-top: 5px;">📍 Ground Floor, 43 Santoshpur Ave, Beside IIFL Gold Loan.<br>Santoshpur, Kolkata – 700075.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="credit" style="border-top: 1px solid rgba(255,255,255,0.1); width: 100%; text-align: center; padding-top: 20px;">
+    Lapoworld Technical Repair Solutions © 2026. All rights reserved. Founder: Sujan Saha.
+  </div>
+</footer>
+
+<!-- Animation Stack -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- Custom Three.js Infinite Engineering Grid Background -->
+<script>
+  if (typeof THREE !== 'undefined') {
+    const canvas = document.getElementById('three-grid-canvas');
+    const scene = new THREE.Scene();
+    
+    // Add fog to fade out the grid in the distance
+    scene.fog = new THREE.Fog(0x050505, 10, 50);
+    
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
+    camera.position.y = 3;
+    camera.position.z = 10;
+    camera.lookAt(0, 0, 0);
+
+    const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    // Create a wireframe grid
+    const gridGeometry = new THREE.PlaneGeometry(100, 100, 40, 40);
+    
+    // Rotate plane to lay flat
+    gridGeometry.rotateX(-Math.PI / 2);
+
+    const gridMaterial = new THREE.MeshBasicMaterial({ 
+      color: 0x06b6d4, // Cyan
+      wireframe: true,
+      transparent: true,
+      opacity: 0.15
+    });
+
+    const grid = new THREE.Mesh(gridGeometry, gridMaterial);
+    scene.add(grid);
+
+    // Second grid above for a "tunnel" protocol effect
+    const gridTop = new THREE.Mesh(gridGeometry, new THREE.MeshBasicMaterial({ 
+      color: 0x8b5cf6, // Violet
+      wireframe: true,
+      transparent: true,
+      opacity: 0.1
+    }));
+    gridTop.position.y = 8;
+    scene.add(gridTop);
+
+    let mouseX = 0;
+    
+    window.addEventListener('mousemove', (e) => {
+        mouseX = (e.clientX / window.innerWidth) - 0.5;
+    });
+
+    const clock = new THREE.Clock();
+
+    function animate() {
+        requestAnimationFrame(animate);
+        const elapsedTime = clock.getElapsedTime();
+
+        // Infinite scroll effect by moving the grid towards the camera
+        // The grid repeats every 2.5 units based on our geometry segments
+        grid.position.z = (elapsedTime * 2) % 2.5;
+        gridTop.position.z = (elapsedTime * 2) % 2.5;
+        
+        // Subtle camera sway
+        camera.position.x += (mouseX * 4 - camera.position.x) * 0.05;
+        camera.lookAt(0, 2, 0);
+
+        renderer.render(scene, camera);
+    }
+    animate();
+
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  }
+</script>
+
+<!-- Lapoworld Main Logic (GSAP triggers & UI) -->
+<script src="tooplate-2167-orbital-script.js"></script>
+
+</body>
+</html>
